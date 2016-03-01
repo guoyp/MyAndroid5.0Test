@@ -8,7 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.guoyp.myandroid50test.R;
-import com.guoyp.myandroid50test.RecyclerViewModel;
+import com.guoyp.myandroid50test.model.RecyclerViewModel;
 
 import java.util.ArrayList;
 

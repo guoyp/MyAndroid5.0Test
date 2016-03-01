@@ -1,4 +1,4 @@
-package com.guoyp.myandroid50test;
+package com.guoyp.myandroid50test.model;
 
 /**
  * Created by guoyp on 2016/2/25.
