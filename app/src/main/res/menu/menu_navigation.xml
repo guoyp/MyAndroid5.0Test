@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/item_navigation_one"-->
+            <!--android:icon="@drawable/ico_money"-->
+            <!--android:title="money">-->
+        <!--</item>-->
+        <!--<item-->
+            <!--android:id="@+id/item_navigation_two"-->
+            <!--android:icon="@drawable/ico_seach"-->
+            <!--android:title="seach"-->
+            <!--&gt;-->
+        <!--</item>-->
+        <!--<item-->
+            <!--android:id="@+id/item_navigation_three"-->
+            <!--android:icon="@drawable/ico_set"-->
+            <!--android:title="setting"-->
+            <!--&gt;-->
+    <!--</item>-->
+    <!--</group>-->
+    <!--<item-->
+        <!--android:title="second">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/item_four"-->
+                <!--android:icon="@drawable/ico_car"-->
+                <!--android:title="car"></item>-->
+        <!--</menu>-->
+    <!--</item>-->
+    <!-- 以上代码你如果点击Sub items里面的Sub item，如果你期望当前选中应该是Sub item，你会发现不起作用
+        需要将android:checkableBehavior="single"去掉，然后给每个item项添加android:checkable="true"修改如下，然后在
+        代码里边设置-->
+
+    <group >
+        <item
+            android:checkable="true"
+            android:id="@+id/item_navigation_one"
+            android:icon="@drawable/ico_money"
+            android:title="money">
+        </item>
+        <item
+            android:checkable="true"
+            android:id="@+id/item_navigation_two"
+            android:icon="@drawable/ico_seach"
+            android:title="seach"
+            >
+        </item>
+        <item
+            android:checkable="true"
+            android:id="@+id/item_navigation_three"
+            android:icon="@drawable/ico_set"
+            android:title="setting"
+            >
+        </item>
+    </group>
+    <item
+        android:title="second">
+        <menu>
+            <item
+            android:checkable="true"
+            android:id="@+id/item_four"
+            android:icon="@drawable/ico_car"
+            android:title="car"></item>
+
+        </menu>
+    </item>
+
+</menu>

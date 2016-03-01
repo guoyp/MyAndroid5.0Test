@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/navigation_head_collapsingToolbarlayout"
+    android:layout_height="200dp"
+    android:background="#8968CD">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/head_portrait"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="guoyp guangzhou"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="http://my.csdn.net/hsjskh"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

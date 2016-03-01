@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".SecondActivity">
+    <item android:id="@+id/action_edit"
+        android:title="tianj"
+        android:orderInCategory="80"
+        android:icon="@drawable/ic_user_backlog"
+        app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_settings" android:title="@string/action_settings"
+        android:icon="@drawable/ic_user_add_user"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@+id/action_break" android:title="@string/action_settings"
+        android:icon="@drawable/ic_user_login"
+        android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <!-- showAsAction="ifRoom"属性   actionbar中放不下，就放到overflow中去 -->
+
+</menu>
