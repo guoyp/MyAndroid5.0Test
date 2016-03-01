@@ -134,8 +134,7 @@ public class MainActivity extends AppCompatActivity {
                 }).show();
                 break;
             case 3:
-                Intent i = new Intent(MainActivity.this,GestureDetectorActivity.class);
-                startActivity(i);
+
                 break;
 
             case R.id.action_edit:
