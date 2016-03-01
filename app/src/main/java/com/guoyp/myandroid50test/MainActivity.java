@@ -102,7 +102,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        menu.add("item 01");
+        menu.add(0,3,0,"item 01");
         menu.add(0,0,0,"item 02");
         menu.add(0, 1, 0, "item 03");
         menu.add(0,2,0,"item 04");
@@ -132,6 +132,10 @@ public class MainActivity extends AppCompatActivity {
                         sk.setText("item 04 clicked");
                     }
                 }).show();
+                break;
+            case 3:
+                Intent i = new Intent(MainActivity.this,GestureDetectorActivity.class);
+                startActivity(i);
                 break;
 
             case R.id.action_edit:

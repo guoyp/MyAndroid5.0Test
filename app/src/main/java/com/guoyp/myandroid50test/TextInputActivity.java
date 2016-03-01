@@ -6,8 +6,13 @@ import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /**
  * Created by guoyp on 2016/2/25.
@@ -19,11 +24,18 @@ public class TextInputActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_textinput);
+        init();
+        setListener();
+    }
+    private void init(){
         textinput_username = (TextInputLayout) findViewById(R.id.textinput_username);
         textinput_password = (TextInputLayout) findViewById(R.id.textinput_password);
         textinput_username.getEditText().addTextChangedListener(new MyTextWatcher(textinput_username,"用户名长度不能小于4位",0));
         textinput_password.getEditText().addTextChangedListener(new MyTextWatcher(textinput_password,"密码长度不能小于6位",1));
         mButton = (Button) findViewById(R.id.btn_show_snackbar);
+
+    }
+    private void setListener(){
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
