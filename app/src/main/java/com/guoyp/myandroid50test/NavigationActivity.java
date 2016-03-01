@@ -104,7 +104,7 @@ public class NavigationActivity extends AppCompatActivity {
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
-        Log.i("TEST","ev = "+ev.getAction());
+//        Log.i("TEST","ev = "+ev.getAction());
         mGestureDetector.onTouchEvent(ev);
         return super.dispatchTouchEvent(ev);
     }
