@@ -62,6 +62,7 @@ public class SecondActivity extends AppCompatActivity {
         list.add(ftv);
 
         ViewpageAdapter adapter = new ViewpageAdapter(fm,list);
+        mViewPage.setOffscreenPageLimit(3);
         mViewPage.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPage);
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);
