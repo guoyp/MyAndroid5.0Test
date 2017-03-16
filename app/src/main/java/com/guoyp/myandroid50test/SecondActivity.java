@@ -62,7 +62,8 @@ public class SecondActivity extends AppCompatActivity {
         list.add(ftv);
 
         ViewpageAdapter adapter = new ViewpageAdapter(fm,list);
-        mViewPage.setOffscreenPageLimit(3);
+        mViewPage.setOffscreenPageLimit(3);//设置ViewPage预加载数量,这只会加载出来view 在fragment可见的情况下在加载数据
+        //另外ViewPage中的setOffscreenPageLimit方法是设置预加载页数，当参数小于1时系统也是默认为1
         mViewPage.setAdapter(adapter);
         mTabLayout.setupWithViewPager(mViewPage);
         mTabLayout.setTabMode(TabLayout.MODE_FIXED);
